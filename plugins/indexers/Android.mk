@@ -20,7 +20,7 @@ LOCAL_MODULE:= libgstcoreindexers
 
 LOCAL_C_INCLUDES := 			\
 	external/gstreamer       	\
-	external/gstreamer/android      \
+	$(GSTREAMER_TOP)/android/arch/$(TARGET_ARCH)       \
 	external/gstreamer/libs 	\
 	external/gstreamer/gst		\
 	external/gstreamer/gst/android	\

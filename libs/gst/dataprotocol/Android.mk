@@ -22,7 +22,7 @@ LOCAL_C_INCLUDES := 			\
 	$(GSTREAMER_TOP) 		\
 	$(GSTREAMER_TOP)/libs		\
 	external/gstreamer	   	\
-	external/gstreamer/android	\
+	$(GSTREAMER_TOP)/android/arch/$(TARGET_ARCH) 	\
 	external/gstreamer/gst		\
 	external/gstreamer/gst/android	\
 	external/glib   		\

@@ -43,8 +43,10 @@
 
 /* FIXME: This is just a temporary hack.  We should have a better
  * check for siginfo handling. */
+#ifndef HAVE_CPU_MIPS
 #ifdef SA_SIGINFO
 #define USE_SIGINFO
+#endif
 #endif
 
 extern volatile gboolean glib_on_error_halt;

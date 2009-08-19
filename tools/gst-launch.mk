@@ -21,7 +21,7 @@ LOCAL_MODULE:= gst-launch-$(GST_MAJORMINOR)
 LOCAL_C_INCLUDES := 			\
 	$(LOCAL_PATH)   		\
 	$(GSTREAMER_TOP)		\
-	external/gstreamer/android 	\
+	$(GSTREAMER_TOP)/android/arch/$(TARGET_ARCH)  	\
 	external/gstreamer/gst/android 	\
 	external/gstreamer/gst 		\
 	external/gstreamer/libs 	\

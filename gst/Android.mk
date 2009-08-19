@@ -81,19 +81,19 @@ LOCAL_SHARED_LIBRARIES := 	\
 
 LOCAL_MODULE:= libgstreamer-$(GST_MAJORMINOR)
 
-LOCAL_C_INCLUDES := 				\
-	$(LOCAL_PATH)           		\
-	$(GSTREAMER_TOP)			\
-	$(GSTREAMER_TOP)/android       		\
-	$(LOCAL_PATH)/android   		\
-	$(LOCAL_PATH)/android/gst   		\
-	$(LOCAL_PATH)/android/gst/parse   	\
-	$(LOCAL_PATH)/parse           		\
-	external/glib				\
-	external/glib/android			\
-	external/glib/glib			\
-	external/glib/gmodule			\
-	external/glib/gobject			\
+LOCAL_C_INCLUDES := 						\
+	$(LOCAL_PATH)           				\
+	$(GSTREAMER_TOP)					\
+	$(GSTREAMER_TOP)/android/arch/$(TARGET_ARCH)    	\
+	$(LOCAL_PATH)/android   				\
+	$(LOCAL_PATH)/android/gst   				\
+	$(LOCAL_PATH)/android/gst/parse  		 	\
+	$(LOCAL_PATH)/parse           				\
+	external/glib						\
+	external/glib/android					\
+	external/glib/glib					\
+	external/glib/gmodule					\
+	external/glib/gobject					\
 	external/glib/gthread
 
 LOCAL_CFLAGS := \
