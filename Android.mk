@@ -1,4 +1,5 @@
 # This file is the top android makefile for all sub-modules.
+ifeq ($(strip $(BUILD_WITH_GST)),true)
 
 LOCAL_PATH := $(call my-dir)
 
@@ -15,3 +16,4 @@ include $(GSTREAMER_TOP)/plugins/elements/Android.mk
 include $(GSTREAMER_TOP)/plugins/indexers/Android.mk
 include $(GSTREAMER_TOP)/tools/Android.mk
 
+endif
